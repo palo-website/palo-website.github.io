@@ -1,39 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="description"
-        content="Policy Adaptation via Language Optimization">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta charset="iso-8859-1">
+  <meta name="description" content="Policy Adaptation via Language Optimization">
+  <meta name="keywords" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Policy Adaptation via Language Optimization</title>
+  <title>Policy Adaptation via Language Optimization: Decomposing Tasks for Few-Shot Imitation</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PZKFKSK4DD"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-
-    gtag('js', new Date());
-
-    gtag('config', 'G-PYVRSFMDRL');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-PZKFKSK4DD');
   </script>
-
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
@@ -41,8 +30,7 @@
   <script src="./static/js/index.js"></script>
 </head>
 <body>
-
-<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+  <!-- <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
@@ -81,74 +69,39 @@
 
   </div>
 </nav> -->
-
-
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">PALO: Few-Shot Imitation of Policy Adaptation via Language Optimization</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="about:blank">Authors</a><sup>1</sup></span>
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of California, Berekeley</span>
-          </div>
-
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
           <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/google/nerfies"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span>
+            <h1 class="title is-1 publication-title">Policy Adaptation via Language Optimization</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><a href="about:blank">Authors</a><sup>1</sup></span>
             </div>
-
+            <div class="is-size-5 publication-authors">
+              <!-- <span class="author-block"><sup>1</sup>University of California, Berekeley</span> -->
+              <span class="author-block">University of California, Berekeley</span>
+            </div>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block"><a href="https://arxiv.org/pdf/2011.12948" class=
+                "external-link button is-normal is-rounded is-dark"><span>Paper</span></a></span>
+                <span class="link-block"><a href="https://arxiv.org/abs/2011.12948" class=
+                "external-link button is-normal is-rounded is-dark"><span>arXiv</span></a></span>
+                <!-- Video Link. -->
+                 <span class="link-block"><a href="https://www.youtube.com/watch?v=MrKrnHhk8IA" class=
+                "external-link button is-normal is-rounded is-dark"><span>Video</span></a></span>
+                <!-- Code Link. -->
+                 <span class="link-block"><a href="https://github.com/google/nerfies" class=
+                "external-link button is-normal is-rounded is-dark"><span>Code</span></a></span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- <section class="hero teaser">
+  </section><!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video id="teaser" autoplay muted loop playsinline height="100%">
@@ -163,282 +116,194 @@
     </div>
   </div>
 </section> -->
-
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <!-- Paper video. -->
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-            <h2 class="title is-3">Video</h2>
-            <div class="publication-video">
-              <iframe src="./static/vids/palo_video.mp4"
-                      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <!-- Paper video. -->
+          <div class="columns is-centered has-text-centered">
+            <div class="column">
+              <h2 class="title is-3">Video</h2>
+              <div class="publication-video">
+                <!-- <iframe src="./static/vids/palo_video.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+                <video id="overview" controls="" width="99%"><source src="./static/vids/palo_video.mp4" type=
+                "video/mp4"></video>
+              </div>
             </div>
+          </div><!--/ Paper video. -->
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>Learned language-conditioned robot policies fail to effectively adapt to new real-world tasks
+            even when pre-trained across a diverse set of instructions. We propose a novel approach for
+            few-shot adaptation to unseen tasks that exploits the semantic understanding of task
+            decomposition provided by new capabilities of vision-language models (VLMs). Our method, Policy
+            Adaptation via Language Optimization (PALO), combines a handful of demonstrations of a task with
+            proposed language decompositions sampled from a VLM to quickly enable rapid nonparametric
+            adaptation, avoiding the need for a larger fine-tuning dataset. We evaluate PALO on extensive
+            real-world experiments consisting of challenging unseen, long-horizon robot manipulation tasks.
+            We find that PALO is able of consistently complete long-horizon, multi-tier tasks in the real
+            world, outperforming state of the art pre-trained generalist policies, and methods that have
+            access to the same demonstrations</p>
           </div>
         </div>
-        <!--/ Paper video. -->
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Learned language-conditioned robot policies fail to effectively adapt
-            to new real-world tasks even when pre-trained across a diverse set of instructions. We propose a novel approach for few-shot adaptation to unseen tasks that
-            exploits the semantic understanding of task decomposition provided by new capabilities of vision-language models (VLMs). Our method, Policy Adaptation via
-            Language Optimization (PALO), combines a handful of demonstrations of a task
-            with proposed language decompositions sampled from a VLM to quickly enable
-            rapid nonparametric adaptation, avoiding the need for a larger fine-tuning dataset.
-            We evaluate PALO on extensive real-world experiments consisting of challenging
-            unseen, long-horizon robot manipulation tasks. We find that PALO is able of consistently complete long-horizon, multi-tier tasks in the real world, outperforming
-            state of the art pre-trained generalist policies, and methods that have access to the
-            same demonstrations
-          </p>
-          <!-- <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
-          </p> -->
-        </div>
-      </div>
+      </div><!--/ Abstract. -->
     </div>
-    <!--/ Abstract. -->
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <hr>
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-
-      <div class="container row py-2">
-        <h2 class="title is-3">Policy Adaptation via Language Optimization</h2>
-        <div class="col-8">
-            <img class="mw-100" src="./static/images/frontfig.png" alt="summary"></img>
-        </div>
-        <div class="col-4 px-4 d-flex my-auto">
-          <p>Given only a few (n=5) expert demonstrations, PALO evaluates the best language decomposition proposals generated from VLMs using nonparametric optimization and take said optimal language decomposition plan with high and low level instructions during inference.
-          </p>
-        </div>
+  </section>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <hr>
+      <div class="columns is-centered">
+        <!-- Visual Effects. -->
+        <div class="container row py-2">
+          <h2 class="title is-3">Policy Adaptation via Language Optimization</h2>
+          <div class="col-8"><img class="mw-100" src="./static/images/frontfig.png" alt="summary"></div>
+          <div class="col-4 px-4 d-flex my-auto">
+            <p>Given only a few (n=5) expert demonstrations, PALO evaluates the best language decomposition
+            proposals generated from VLMs using nonparametric optimization and take said optimal language
+            decomposition plan with high and low level instructions during inference.</p>
+          </div>
+        </div><!--/ Visual Effects. -->
       </div>
-  
-      <!--/ Visual Effects. -->
-    </div>
-    <hr>
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
+      <hr>
+      <div class="columns is-centered">
+        <!-- Visual Effects. -->
         <div class="container row py-2">
           <h2 class="title is-3">Training a Hierarchical Language-Conditioned Agent</h2>
-            <div class="col-8">
-                <img class="mw-100" src="./static/images/fig_pol.png" alt="summary"></img>
+          <div class="col-8"><img class="mw-100" src="./static/images/fig_pol.png" alt="summary"></div>
+          <div class="col-4 px-4 d-flex my-auto">
+            <p>To utilize the hierarchical language decomposition, we train a language-conditioned behavioral
+            cloning agent with algorithmically generated low level instruction within the training dataset.
+            We also mask out low and high level instructions during training.</p>
+            <p>Unlike prior configurations, this architecture allows our policy to be jointly conditioned on
+            high and low level language instructions, allowing the policy to finish tasks with either
+            modality.</p>
+          </div>
+        </div><!--/ Visual Effects. -->
+      </div><!--/ Matting. -->
+      <!-- Animation. -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Tasks</h2><!-- Interpolating. -->
+          <h3 class="title is-4">Policy Rollouts</h3>
+          <div class="content has-text-justified">
+            <p>We provide the policy rollouts from PALO with 8 tasks from 4 different scenes. We include the
+            low-level instructions generated by PALO in the video breakdown</p>
+          </div><br>
+          <div class="rows">
+            <h3 class="title is-size-5">Sweep</h3>
+            <div class="columns">
+              <div class="column has-text-justified">
+                <p style="text-align:left">&quot;Sweep the mints to the right after putting the mushroom into
+                the pot&quot;</p><video id="dist1" muted autoplay="" loop="" width=
+                "99%"><source src="./static/vids/mints.mp4" type="video/mp4"></video>
+              </div>
+              <div class="column has-text-justified">
+                <p style="text-align:left">&quot;Sweep the skittles into the bin using the swiffer after
+                putting the mushroom in the container&quot;</p><video id="dist1" muted autoplay=
+                "" loop="" width="99%"><source src="./static/vids/sweep_skittles.mp4" type=
+                "video/mp4"></video>
+              </div>
             </div>
-            <div class="col-4 px-4 d-flex my-auto">
-                <p>To utilize the hierarchical language decomposition, we train a language-conditioned behavioral cloning agent with algorithmically generated low level instruction within the training dataset. We also mask out low and high level instructions during training.</p>
-                <p>Unlike prior configurations, this architecture allows our policy to be jointly conditioned on high and low level language instructions, allowing the policy to finish tasks with either modality.</p>
+            <h3 class="title is-size-5">Drawer</h3>
+            <div class="columns">
+              <div class="column has-text-justified">
+                <p style="text-align:left">&quot;Put the beet toy/purple thing into the
+                drawer&quot;</p><video id="dist1" muted autoplay="" loop="" width=
+                "99%"><source src="./static/vids/drawer_put.mp4" type="video/mp4"></video>
+              </div>
+              <div class="column has-text-justified">
+                <p style="text-align:left">&quot;Pry out the pot in the drawer using the
+                ladle&quot;</p><video id="dist1" muted autoplay="" loop="" width=
+                "99%"><source src="./static/vids/pry.mp4" type="video/mp4"></video>
+              </div>
             </div>
+            <h3 class="title is-size-5">Bowl</h3>
+            <div class="columns">
+              <div class="column has-text-justified">
+                <p style="text-align:left">&quot;Pour the contents in the scoop into the
+                bowl&quot;</p><video id="dist1" muted autoplay="" loop="" width=
+                "99%"><source src="./static/vids/salad.mp4" type="video/mp4"></video>
+              </div>
+              <div class="column has-text-justified">
+                <p style="text-align:left">&quot;Make a salad bowl with corn and mushroom&quot;</p><video id=
+                "dist1" muted autoplay="" loop="" width="99%"><source src=
+                "./static/vids/pour.mp4" type="video/mp4"></video>
+              </div>
+            </div>
+            <h3 class="title is-size-5">Rotate</h3>
+            <div class="columns">
+              <div class="column has-text-justified">
+                <p style="text-align:left">&quot;Put the spoon in the cleaner while aligning
+                it&quot;</p><video id="dist1" muted autoplay="" loop="" width="99%"><source src=
+                "./static/vids/spoon.mp4" type="video/mp4"></video>
+              </div>
+              <div class="column has-text-justified">
+                <p style="text-align:left">&quot;Put the marker in the white box while aligning
+                it&quot;</p><video id="dist1" muted autoplay="" loop="" width="99%"><source src=
+                "./static/vids/marker.mp4" type="video/mp4"></video>
+              </div>
+            </div>
+          </div>
         </div>
-      <!--/ Visual Effects. -->
-    </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Tasks</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Policy Rollouts</h3>
-        <div class="content has-text-justified">
-          <p>
-            We provide the policy rollouts from PALO with 8 tasks from 4 different scenes. We include the low-level instructions generated by PALO in the video breakdown
-          </p>
-        </div>
-        
-        <br/>
-        
-        <div class="rows">
-          <h3 class="title is-size-5">Sweep</h3>
-          <div class="columns">
-            <div class="column has-text-justified">
-              <p style="text-align:left">
-                "Sweep the mints to the right after putting the mushroom into the pot"
-              </p>
-              <video id="dist1" controls="" muted="" autoplay="" loop="" width="99%">
-                <source src="./static/vids/mints.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="column has-text-justified">
-              <p style="text-align:left">
-                "Sweep the skittles into the bin using the swiffer after putting the mushroom in the container"
-              </p>
-              <video id="dist1" controls="" muted="" autoplay="" loop="" width="99%">
-                <source src="./static/vids/sweep_skittles.mp4" type="video/mp4">
-              </video>
-            </div>
+      </div><!--/ Animation. -->
+      <hr>
+      <h2 class="title is-2">Performance Comparison</h2>
+      <div class="columns is-centered">
+        <!-- Visual Effects. -->
+        <div class="container row py-2">
+          <div class="col-8"><img class="mw-100" src="./static/images/comparison.png" alt="summary"></div>
+          <div class="col-4 px-4 d-flex my-auto">
+            <p>While evaluating on long-horizon and unseen skills tasks, PALO outperforms all conventional
+            zero-shot generalization methods by 3x in terms of success rate, and carries positive improvement
+            compared to conventional finetuning methods despite having only 5 expert demonstrations per
+            task.</p>
+            <p>Unlike previous finetuning methods that take up to 30 minutes to train given the dataset size,
+            PALO is also computationally efficient, taking up only 470 seconds for optimization to
+            finish.</p>
           </div>
-          <h3 class="title is-size-5">Drawer</h3>
-          <div class="columns">
-            <div class="column has-text-justified">
-              <p style="text-align:left">
-                "Put the beet toy/purple thing into the drawer"
-              </p>
-              <video id="dist1" controls="" muted="" autoplay="" loop="" width="99%">
-                <source src="./static/vids/drawer_put.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="column has-text-justified">
-              <p style="text-align:left">
-                "Pry out the pot in the drawer using the ladle"
-              </p>
-              <video id="dist1" controls="" muted="" autoplay="" loop="" width="99%">
-                <source src="./static/vids/pry.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-          <h3 class="title is-size-5">Bowl</h3>
-          <div class="columns">
-            <div class="column has-text-justified">
-              <p style="text-align:left">
-                "Pour the contents in the scoop into the bowl"
-              </p>
-              <video id="dist1" controls="" muted="" autoplay="" loop="" width="99%">
-                <source src="./static/vids/salad.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="column has-text-justified">
-              <p style="text-align:left">
-                "Make a salad bowl with corn and mushroom"
-              </p>
-              <video id="dist1" controls="" muted="" autoplay="" loop="" width="99%">
-                <source src="./static/vids/pour.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
-          <h3 class="title is-size-5">Rotate</h3>
-          <div class="columns">
-            <div class="column has-text-justified">
-              <p style="text-align:left">
-                "Put the spoon in the cleaner while aligning it"
-              </p>
-              <video id="dist1" controls="" muted="" autoplay="" loop="" width="99%">
-                <source src="./static/vids/spoon.mp4" type="video/mp4">
-              </video>
-            </div>
-            <div class="column has-text-justified">
-              <p style="text-align:left">
-                "Put the marker in the white box while aligning it"
-              </p>
-              <video id="dist1" controls="" muted="" autoplay="" loop="" width="99%">
-                <source src="./static/vids/marker.mp4" type="video/mp4">
-              </video>
-            </div>
-          </div>
+        </div><!--/ Visual Effects. -->
+      </div>
+      <h2 class="title is-2">Key Components</h2>
+      <div class="columns is-centered">
+        <!-- Visual Effects. -->
+        <div class="container row py-2">
+          <div class="col-8"><img class="mw-100" src="./static/images/ablations.png" alt="summary"></div>
+          <ul>
+            <li>Using a pretrained VLM helps tremendously with task decomposition in achieving OOD
+            tasks.</li>
+            <li>Conditioning on different language modalities (high vs low) give different benefits on
+            different scenes.</li>
+            <li>Stochastic boundary sampling gives better language decomposition.</li>
+          </ul><!--/ Visual Effects. -->
         </div>
       </div>
     </div>
-    <!--/ Animation. -->
-    <hr>
-    <h2 class="title is-2">Performance Comparison</h2>
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-        <div class="container row py-2">
-            <div class="col-8">
-                <img class="mw-100" src="./static/images/comparison.png" alt="summary"></img>
-            </div>
-            <div class="col-4 px-4 d-flex my-auto">
-              <p>While evaluating on long-horizon and unseen skills tasks, PALO outperforms all conventional zero-shot generalization methods by 3x in terms of success rate, and carries positive improvement compared to conventional finetuning methods despite having only 5 expert demonstrations per task.</p>
-              <p>Unlike previous finetuning methods that take up to 30 minutes to train given the dataset size, PALO is also computationally efficient, taking up only 470 seconds for optimization to finish.</p>
-            </div>
-        </div>
-      <!--/ Visual Effects. -->
+  </section>
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@misc{myers2024policy,
+  title = {Policy Adaptation via Language Optimization: Decomposing Tasks for Few-Shot Imitation},
+  author = {Myers, Vivek and Zheng, Bill Chunyuan and Mees, Oier and Levine, Sergey and Fang, Kuan},
+  year = {2024},
+  langid = {english}
+}
+</code></pre>
     </div>
-    <h2 class="title is-2">Key Components</h2>
-    <div class="columns is-centered">
-
-      <!-- Visual Effects. -->
-        <div class="container row py-2">
-            <div class="col-8">
-                <img class="mw-100" src="./static/images/ablations.png" alt="summary"></img>
-            </div>
-              <ul>
-                <li>Using a pretrained VLM helps tremendously with task decomposition in achieving OOD tasks.</li>
-                <li>Conditioning on different language modalities (high vs low) give different benefits on different scenes.</li>
-                <li>Stochastic boundary sampling gives better language decomposition.</li>
-              </ul>
-          <!--/ Visual Effects. -->
-        </div>
-</section>
-
-
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
-}</code></pre>
-  </div>
-</section>
-
-
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
+  </section>
+  <!-- <footer class="footer"> -->
+  <!--   <div class="container"> -->
+  <!--     <div class="columns is-centered"> -->
+  <!--       <div class="column is-8"> -->
+  <!--         <div class="content"> -->
+  <!--           <p>This website is licensed under a <a rel="license" href= -->
+  <!--           "http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 -->
+  <!--           International License</a>.</p> -->
+  <!--         </div> -->
+  <!--       </div> -->
+  <!--     </div> -->
+  <!--   </div> -->
+  <!-- </footer> -->
 </body>
 </html>
