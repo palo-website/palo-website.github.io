@@ -1,22 +1,20 @@
 body {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
-
 .footer .icon-link {
-    font-size: 25px;
-    color: #000;
+  font-size: 25px;
+  color: #000;
 }
 
 .link-block a {
-    margin-top: 5px;
-    margin-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .dnerf {
   font-variant: small-caps;
 }
-
 
 .teaser .hero-body {
   padding-top: 0;
@@ -24,16 +22,43 @@ body {
 }
 
 .teaser {
-  font-family: 'Google Sans', sans-serif;
+  font-family: "Google Sans", sans-serif;
+  padding-top: 2cm;
+  padding-bottom: 2cm;
 }
 
+.instruction {
+  font-family: "Google Sans", sans-serif;
+  font-size: 9pt;
+  padding: 0.2em 0.5em;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #000;
+  text-align: center;
+  width: fit-content;
+  max-width: 80%;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightyellow;
+  margin-top: auto;
+}
+
+.instruction:before,
+.instruction:after {
+  content: '"';
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+}
 
 .publication-title {
 }
 
 .publication-banner {
   max-height: parent;
-
 }
 
 .publication-banner video {
@@ -48,34 +73,34 @@ body {
 }
 
 .publication-title {
-    font-family: 'Google Sans', sans-serif;
+  font-family: "Google Sans", sans-serif;
 }
 
 .publication-authors {
-    font-family: 'Google Sans', sans-serif;
+  font-family: "Google Sans", sans-serif;
 }
 
 .publication-venue {
-    color: #555;
-    width: fit-content;
-    font-weight: bold;
+  color: #555;
+  width: fit-content;
+  font-weight: bold;
 }
 
 .publication-awards {
-    color: #ff3860;
-    width: fit-content;
-    font-weight: bolder;
+  color: #ff3860;
+  width: fit-content;
+  font-weight: bolder;
 }
 
 .publication-authors {
 }
 
 .publication-authors a {
-   color: hsl(204, 86%, 53%) !important;
+  color: hsl(204, 86%, 53%) !important;
 }
 
 .publication-authors a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .author-block {
@@ -85,7 +110,7 @@ body {
 }
 
 .author-block:not(:last-child):after {
-  content: ',';
+  content: ",";
 }
 
 .publication-banner img {
@@ -96,21 +121,21 @@ body {
 }
 
 .publication-video {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
 
-    overflow: hidden;
-    border-radius: 10px !important;
+  overflow: hidden;
+  border-radius: 10px !important;
 }
 
 .publication-video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .publication-body img {
@@ -132,7 +157,6 @@ body {
 .results-carousel video {
   margin: 0;
 }
-
 
 .interpolation-panel {
   background: #f5f5f5;
@@ -158,6 +182,7 @@ body {
 #interpolation-image-wrapper {
   width: 100%;
 }
+
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
