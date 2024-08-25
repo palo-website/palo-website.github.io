@@ -30,6 +30,11 @@
     <script src="./static/js/bulma-carousel.min.js"></script>
     <script src="./static/js/bulma-slider.min.js"></script>
     <script src="./static/js/index.js"></script>
+    <script
+      type="text/javascript"
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
   </head>
   <body>
     <section class="hero">
@@ -240,22 +245,20 @@
           <p>
             Ablation studies show the all components of PALO are necessary for its success. We ablate the following:
           </p>
-          <ol class='pl-5 py-3'>
+          <ol class="pl-5 py-3">
             <li>
-              No high-level <i>c<sub>H</sub></i> conditioning for the learned policy via masking. During inference the high level
-              instructions are replaced by a zero-embedding vector.
+              No high-level \(c_H\) conditioning for the learned policy via masking. 
             </li>
 
             <li>
-                No low-level <i>c<sub>L</sub></i> instruction conditioning via masking. Similar to masking out <i>c<sub>H</sub></i>, we use a zero-embedding
-              vector to represent low level instructions in inference.
+              No low-level \(c_L\) instruction conditioning via masking.
             </li>
 
-            <li>Use fixed <i>u</i> in each trajectory to evaluate </li>
+            <li>Use fixed \(u\) in each trajectory to evaluate</li>
 
-            <li>Generate <i>c</i> zero-shot without expert demonstrations.</li>
+            <li>Generate \(c\) zero-shot without expert demonstrations.</li>
 
-            <li>No VLM decomposition proposals by using only <i>l</i> within our policy.</li>
+            <li>No VLM decomposition proposals by using only \(\ell\) within our policy.</li>
           </ol>
         </div>
         <hr />
