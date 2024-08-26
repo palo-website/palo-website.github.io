@@ -74,7 +74,7 @@
                     </a>
                   </span>
                   <span class="link-block px-1">
-                    <a href="./static/vids/palo_video.mp4" class="external-link button is-normal is-rounded is-dark">
+                    <a href="./static/videos/palo_video.mp4" class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-video"></i>
                       </span>
@@ -103,7 +103,7 @@
           <div class="column">
             <div class="publication-video">
               <video id="overview" controls="" width="99%">
-                <source src="./static/vids/palo_video.mp4" type="video/mp4" />
+                <source src="./static/videos/palo_video.mp4" type="video/mp4" />
               </video>
             </div>
           </div>
@@ -122,7 +122,7 @@
               PALO on extensive real-world experiments consisting of challenging unseen, long-horizon robot manipulation
               tasks. We find that PALO is able of consistently complete long-horizon, multi-tier tasks in the real
               world, outperforming state of the art pre-trained generalist policies, and methods that have access to the
-              same demonstrations
+              same demonstrations.
             </p>
           </div>
           <div class="column is-4 columns">
@@ -167,7 +167,7 @@
                 <div class="column has-text-justified quote">
                   <p class="instruction">Sweep the mints to the right after putting the mushroom into the pot</p>
                   <video id="dist1" muted autoplay="" loop="" width="99%">
-                    <source src="./static/vids/mints.mp4" type="video/mp4" />
+                    <source src="./static/videos/mints.mp4" type="video/mp4" />
                   </video>
                 </div>
                 <div class="column has-text-justified quote">
@@ -175,19 +175,19 @@
                     Sweep the skittles into the bin using the swiffer after putting the mushroom in the container
                   </p>
                   <video id="dist1" muted autoplay="" loop="" width="99%">
-                    <source src="./static/vids/sweep_skittles.mp4" type="video/mp4" />
+                    <source src="./static/videos/sweep_skittles.mp4" type="video/mp4" />
                   </video>
                 </div>
                 <div class="column has-text-justified quote">
                   <p class="instruction">Put the beet toy/purple thing into the drawer</p>
                   <video id="dist1" muted autoplay="" loop="" width="99%">
-                    <source src="./static/vids/drawer_put.mp4" type="video/mp4" />
+                    <source src="./static/videos/drawer_put.mp4" type="video/mp4" />
                   </video>
                 </div>
                 <div class="column has-text-justified quote">
                   <p class="instruction">Pry out the pot in the drawer using the ladle</p>
                   <video id="dist1" muted autoplay="" loop="" width="99%">
-                    <source src="./static/vids/pry.mp4" type="video/mp4" />
+                    <source src="./static/videos/pry.mp4" type="video/mp4" />
                   </video>
                 </div>
               </div>
@@ -195,25 +195,25 @@
                 <div class="column has-text-justified quote">
                   <p class="instruction">Pour the contents in the scoop into the bowl</p>
                   <video id="dist1" muted autoplay="" loop="" width="99%">
-                    <source src="./static/vids/salad.mp4" type="video/mp4" />
+                    <source src="./static/videos/salad.mp4" type="video/mp4" />
                   </video>
                 </div>
                 <div class="column has-text-justified quote">
                   <p class="instruction">Make a salad bowl with corn and mushroom</p>
                   <video id="dist1" muted autoplay="" loop="" width="99%">
-                    <source src="./static/vids/pour.mp4" type="video/mp4" />
+                    <source src="./static/videos/pour.mp4" type="video/mp4" />
                   </video>
                 </div>
                 <div class="column has-text-justified quote">
                   <p class="instruction">Put the spoon in the cleaner while aligning it</p>
                   <video id="dist1" muted autoplay="" loop="" width="99%">
-                    <source src="./static/vids/spoon.mp4" type="video/mp4" />
+                    <source src="./static/videos/spoon.mp4" type="video/mp4" />
                   </video>
                 </div>
                 <div class="column has-text-justified quote">
                   <p class="instruction">Put the marker in the white box while aligning it</p>
                   <video id="dist1" muted autoplay="" loop="" width="99%">
-                    <source src="./static/vids/marker.mp4" type="video/mp4" />
+                    <source src="./static/videos/marker.mp4" type="video/mp4" />
                   </video>
                 </div>
               </div>
@@ -246,13 +246,9 @@
             Ablation studies show the all components of PALO are necessary for its success. We ablate the following:
           </p>
           <ol class="pl-5 py-3">
-            <li>
-              No high-level \(c_H\) conditioning for the learned policy via masking. 
-            </li>
+            <li>No high-level \(c_H\) conditioning for the learned policy via masking.</li>
 
-            <li>
-              No low-level \(c_L\) instruction conditioning via masking.
-            </li>
+            <li>No low-level \(c_L\) instruction conditioning via masking.</li>
 
             <li>Use fixed \(u\) in each trajectory to evaluate</li>
 
@@ -262,8 +258,18 @@
           </ol>
         </div>
         <hr />
+        <script>
+          function selectContent(query) {
+            var range = document.createRange()
+            var selection = window.getSelection()
+            var elem = document.querySelector(query)
+            range.selectNodeContents(elem)
+            selection.removeAllRanges()
+            selection.addRange(range)
+          }
+        </script>
         <h2 class="title is-2">BibTeX</h2>
-        <pre><code>@misc{myers2024policy,
+        <pre id="bibtex" onclick="selectContent('#bibtex')"><code>@misc{myers2024policy,
   title = {Policy Adaptation via Language Optimization: Decomposing Tasks for Few-Shot Imitation},
   author = {Myers, Vivek and Zheng, Bill Chunyuan and Mees, Oier and Levine, Sergey and Fang, Kuan},
   year = {2024},
