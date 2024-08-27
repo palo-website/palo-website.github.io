@@ -186,3 +186,13 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+.equal a:after {
+    content: "*";
+}
+
+.equaladv a:after {
+    content: '\2020';
+    width: 0px;
+}
+
