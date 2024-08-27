@@ -189,10 +189,14 @@ body {
 
 .equal a:after {
     content: "*";
+    display: inline-block;
+    width: 0.5pt;
 }
 
 .equaladv a:after {
     content: '\2020';
-    width: 0px;
+    display: inline-block;
+    width: 0.5pt;
+    vertical-align: 2pt;
 }
 
